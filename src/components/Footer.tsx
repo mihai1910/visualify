@@ -12,10 +12,10 @@ const Footer = () => {
           <div className="md:col-span-2">
             <NavLink to="/" className="flex items-center gap-2 mb-4">
               <Zap className="w-6 h-6 text-primary" />
-              <span className="font-display font-bold text-xl">ElectriVision</span>
+              <span className="font-display font-bold text-xl">Visuality</span>
             </NavLink>
             <p className="text-muted-foreground max-w-md mb-6">
-              Visualize and understand electricity concepts through interactive and intuitive visual representations.
+              Learn any topic through interactive and intuitive visual representations. One picture is worth a thousand words.
             </p>
             <div className="flex gap-4">
               <a 
@@ -52,10 +52,10 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink 
-                  to="/concepts" 
+                  to="/learn" 
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Electricity Concepts
+                  Learn
                 </NavLink>
               </li>
               <li>
@@ -85,7 +85,7 @@ const Footer = () => {
                   href="#" 
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Electrical Glossary
+                  Learning Guides
                 </a>
               </li>
               <li>
@@ -93,7 +93,7 @@ const Footer = () => {
                   href="#" 
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Learning Path
+                  Visual Learning Tips
                 </a>
               </li>
             </ul>
@@ -102,7 +102,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} ElectriVision. All rights reserved.
+            © {currentYear} Visuality. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a 
