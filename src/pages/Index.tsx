@@ -68,7 +68,7 @@ const Index = () => {
                     </NavLink>
                     <NavLink to="/about">
                       <button className="px-6 py-3 bg-secondary text-foreground rounded-lg hover:bg-secondary/80 transition-all font-medium w-full sm:w-auto">
-                        About Visuality
+                        About Visualify
                       </button>
                     </NavLink>
                   </div>
@@ -86,10 +86,6 @@ const Index = () => {
                     <AIVisualizer type="neural-network" />
                   </div>
                   <div className="absolute -bottom-4 -right-4 bg-white dark:bg-slate-800 px-4 py-2 rounded-lg shadow-lg">
-                    <div className="flex items-center gap-2">
-                      <Lightbulb className="w-5 h-5 text-amber-500" />
-                      <span className="text-sm font-medium">Visual AI in action</span>
-                    </div>
                   </div>
                 </motion.div>
               </div>
@@ -107,7 +103,7 @@ const Index = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">How Visuality Works</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">How Visualify Works</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Transform your learning experience in three simple steps
               </p>
@@ -229,7 +225,7 @@ const Index = () => {
               </p>
               <NavLink to="/learn">
                 <button className="px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all font-medium text-lg flex items-center gap-2 mx-auto">
-                  Try Visuality Now
+                  Try Visualify Now
                   <ArrowRight className="w-5 h-5" />
                 </button>
               </NavLink>

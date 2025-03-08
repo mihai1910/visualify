@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Zap, Menu, X } from 'lucide-react';
+import logo from './logo.png'
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -31,8 +32,8 @@ const Header = () => {
           to="/" 
           className="flex items-center gap-2 font-display font-bold text-xl transition-all"
         >
-          <Zap className="w-6 h-6 text-primary" />
-          <span className="text-gradient">Visuality</span>
+          <img src={logo} alt={'logo'} className="w-7 h-6 text-primary" />
+          <span className="text-gradient">Visualify</span>
         </NavLink>
         
         {/* Desktop Navigation */}

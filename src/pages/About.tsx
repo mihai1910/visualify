@@ -32,19 +32,24 @@ const About = () => {
 
   const teamMembers = [
     {
-      name: 'Alex Chen',
-      role: 'AI Researcher',
-      image: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80'
+      name: 'Pop Mihai',
+      role: 'Visual Designer (just student)',
+      image: 'https://images.unsplash.com/photo-1689019764274-64ba1b0adcdb?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
-      name: 'Maya Rodriguez',
-      role: 'Visual Designer',
-      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80'
+      name: 'Georgescu Alexandru',
+      role: 'AI Developer (just student)',
+      image: 'https://images.unsplash.com/photo-1689019764274-64ba1b0adcdb?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
-      name: 'David Park',
-      role: 'Interactive Developer',
-      image: 'https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80'
+      name: 'Vascuta Denis',
+      role: 'Interactive Developer (just student)',
+      image: 'https://images.unsplash.com/photo-1689019764274-64ba1b0adcdb?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    },
+    {
+      name: 'Balascan Gabriel',
+      role: 'AI Developer',
+      image: 'https://images.unsplash.com/photo-1689019764274-64ba1b0adcdb?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     }
   ];
 
@@ -209,7 +214,7 @@ const About = () => {
               </p>
             </motion.div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {teamMembers.map((member, index) => (
                 <motion.div
                   key={index}
@@ -263,7 +268,7 @@ const About = () => {
                     href="mailto:contact@aivisualizer.com" 
                     className="text-primary hover:underline"
                   >
-                    contact@aivisualizer.com
+                    contact@visualify.com
                   </a>
                 </div>
                 
