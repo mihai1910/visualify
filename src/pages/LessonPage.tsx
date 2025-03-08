@@ -9,6 +9,9 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import AIVisualizer from '@/components/AIVisualizer';
 
+// Define the correct type for visualizerType to match AIVisualizer's type prop
+type VisualizerType = 'neural-network' | 'connections' | 'particles';
+
 // Mock lesson data - in a real app, this would come from the backend
 const mockLessons = [
   {
@@ -26,7 +29,7 @@ const mockLessons = [
         <li><strong>Inference:</strong> Using the trained model to make predictions</li>
       </ul>
     `,
-    visualizerType: "neural-network",
+    visualizerType: "neural-network" as VisualizerType,
     nextChapter: "ch2",
     prevChapter: null
   },
@@ -47,7 +50,7 @@ const mockLessons = [
         <li><strong>Applications:</strong> Supervised for classification and regression; unsupervised for clustering and dimensionality reduction</li>
       </ul>
     `,
-    visualizerType: "neurons",
+    visualizerType: "connections" as VisualizerType,
     nextChapter: "ch3",
     prevChapter: "ch1"
   },
@@ -71,7 +74,7 @@ const mockLessons = [
         <li><strong>Output Layer:</strong> Produces the final result</li>
       </ul>
     `,
-    visualizerType: "neural-network",
+    visualizerType: "neural-network" as VisualizerType,
     nextChapter: "ch4",
     prevChapter: "ch2"
   },
@@ -97,7 +100,7 @@ const mockLessons = [
         <li><strong>Vanishing/Exploding Gradients:</strong> Issues with gradient propagation</li>
       </ul>
     `,
-    visualizerType: "neurons",
+    visualizerType: "particles" as VisualizerType,
     nextChapter: "ch5",
     prevChapter: "ch3"
   },
@@ -122,7 +125,7 @@ const mockLessons = [
         <li><strong>R-squared:</strong> Proportion of variance in the dependent variable explained by the model</li>
       </ul>
     `,
-    visualizerType: "neural-network",
+    visualizerType: "neural-network" as VisualizerType,
     nextChapter: null,
     prevChapter: "ch4"
   }
@@ -193,7 +196,7 @@ const LessonPage = () => {
               <div className="col-span-2">
                 <div className="sticky top-24">
                   <div className="aspect-square rounded-xl overflow-hidden border shadow-lg mb-4">
-                    <AIVisualizer type={lesson.visualizerType} />
+                    <AIVisualizer type={lesson.visualizerType as 'neural-network' | 'connections' | 'particles'} />
                   </div>
                   <p className="text-sm text-center text-muted-foreground italic">
                     "One picture is worth a thousand words"
