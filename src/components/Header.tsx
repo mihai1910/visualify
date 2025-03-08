@@ -32,7 +32,7 @@ const Header = () => {
           className="flex items-center gap-2 font-display font-bold text-xl transition-all"
         >
           <Zap className="w-6 h-6 text-primary" />
-          <span className="text-gradient">ElectriVision</span>
+          <span className="text-gradient">Visuality</span>
         </NavLink>
         
         {/* Desktop Navigation */}
@@ -46,12 +46,12 @@ const Header = () => {
             Home
           </NavLink>
           <NavLink 
-            to="/concepts" 
+            to="/learn" 
             className={({ isActive }) => 
               `font-medium transition-all hover:text-primary ${isActive ? 'text-primary' : ''}`
             }
           >
-            Electricity Concepts
+            Learn
           </NavLink>
           <NavLink 
             to="/about" 
@@ -92,7 +92,7 @@ const Header = () => {
             Home
           </NavLink>
           <NavLink 
-            to="/concepts" 
+            to="/learn" 
             className={({ isActive }) => 
               `py-3 px-4 font-medium text-lg rounded-md transition-all ${
                 isActive ? 'bg-secondary text-primary' : 'hover:bg-secondary/50'
@@ -100,7 +100,7 @@ const Header = () => {
             }
             onClick={() => setMobileMenuOpen(false)}
           >
-            Electricity Concepts
+            Learn
           </NavLink>
           <NavLink 
             to="/about" 

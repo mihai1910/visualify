@@ -8,8 +8,9 @@ import { useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 
 import Index from "./pages/Index";
-import Concepts from "./pages/Concepts";
+import Learn from "./pages/Learn";
 import About from "./pages/About";
+import LessonPage from "./pages/LessonPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,7 +40,8 @@ const App = () => {
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/concepts" element={<Concepts />} />
+              <Route path="/learn" element={<Learn />} />
+              <Route path="/learn/:chapterId" element={<LessonPage />} />
               <Route path="/about" element={<About />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
