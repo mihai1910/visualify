@@ -1,5 +1,5 @@
 
-import { Brain, Github, Twitter } from 'lucide-react';
+import { Zap, Github, Twitter } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
@@ -11,11 +11,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <NavLink to="/" className="flex items-center gap-2 mb-4">
-              <Brain className="w-6 h-6 text-primary" />
-              <span className="font-display font-bold text-xl">AI Visualizer</span>
+              <Zap className="w-6 h-6 text-primary" />
+              <span className="font-display font-bold text-xl">ElectriVision</span>
             </NavLink>
             <p className="text-muted-foreground max-w-md mb-6">
-              Visualize and understand AI concepts through interactive and intuitive visual representations.
+              Visualize and understand electricity concepts through interactive and intuitive visual representations.
             </p>
             <div className="flex gap-4">
               <a 
@@ -55,7 +55,7 @@ const Footer = () => {
                   to="/concepts" 
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  AI Concepts
+                  Electricity Concepts
                 </NavLink>
               </li>
               <li>
@@ -85,7 +85,7 @@ const Footer = () => {
                   href="#" 
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  AI Glossary
+                  Electrical Glossary
                 </a>
               </li>
               <li>
@@ -102,7 +102,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} AI Visualizer. All rights reserved.
+            © {currentYear} ElectriVision. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a 

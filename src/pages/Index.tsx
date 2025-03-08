@@ -1,5 +1,5 @@
 
-import { ArrowRight, Brain, Cpu, Network, Sparkles } from 'lucide-react';
+import { ArrowRight, Battery, CircuitBoard, Plug, Zap, Lightbulb, Sparkles } from 'lucide-react';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import ConceptCard from '@/components/ConceptCard';
-import AIVisualizer from '@/components/AIVisualizer';
+import ElectricalVisualizer from '@/components/ElectricalVisualizer';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -17,25 +17,25 @@ const Index = () => {
 
   const concepts = [
     {
-      title: 'Neural Networks',
-      description: 'Understand how artificial neural networks mimic the human brain to learn patterns and make decisions.',
-      icon: <Brain />,
+      title: 'Circuits',
+      description: 'Understand how electrical circuits work, from simple to complex, and how electrons flow through them.',
+      icon: <CircuitBoard />,
       color: '#4896ef',
-      link: '/concepts#neural-networks'
+      link: '/concepts#circuits'
     },
     {
-      title: 'Machine Learning',
-      description: 'Explore how algorithms improve through experience and the different approaches to machine learning.',
-      icon: <Cpu />,
+      title: 'Voltage & Current',
+      description: 'Explore the relationship between voltage, current, and resistance in electrical systems.',
+      icon: <Zap />,
       color: '#9d50ff',
-      link: '/concepts#machine-learning'
+      link: '/concepts#voltage-current'
     },
     {
-      title: 'Deep Learning',
-      description: 'Dive into the multi-layered neural networks that enable computers to learn from vast amounts of data.',
-      icon: <Network />,
+      title: 'Components',
+      description: 'Learn about resistors, capacitors, inductors, and other electrical components that make up circuits.',
+      icon: <Plug />,
       color: '#50c9ff',
-      link: '/concepts#deep-learning'
+      link: '/concepts#components'
     }
   ];
 
@@ -57,9 +57,9 @@ const Index = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Explore AI Concepts</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Explore Electricity Concepts</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Interactive visualizations that make complex AI topics easier to understand
+                Interactive visualizations that make complex electrical topics easier to understand
               </p>
             </motion.div>
             
@@ -91,7 +91,7 @@ const Index = () => {
         {/* Interactive Visual Section */}
         <section className="py-20 relative overflow-hidden">
           <div className="absolute inset-0 -z-10">
-            <AIVisualizer type="connections" className="opacity-20" />
+            <ElectricalVisualizer type="electrons" className="opacity-20" />
           </div>
           
           <div className="container mx-auto px-4 md:px-6">
@@ -107,26 +107,26 @@ const Index = () => {
                   Learn Through Interactive Visuals
                 </h2>
                 <p className="text-muted-foreground mb-6">
-                  Our interactive visualizations bring abstract AI concepts to life, making them tangible and easier to understand. Explore neural networks, algorithms, and machine learning processes through dynamic visual representations.
+                  Our interactive visualizations bring abstract electrical concepts to life, making them tangible and easier to understand. Explore circuits, electrons, current flow, and components through dynamic visual representations.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3">
                     <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Sparkles className="w-3 h-3 text-primary" />
                     </div>
-                    <span>Interactive models that respond to your input</span>
+                    <span>Interactive circuit models that respond to your input</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Sparkles className="w-3 h-3 text-primary" />
                     </div>
-                    <span>Visual explanations of complex algorithms</span>
+                    <span>Visual explanations of electricity behavior</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Sparkles className="w-3 h-3 text-primary" />
                     </div>
-                    <span>Step-by-step animated learning processes</span>
+                    <span>Step-by-step animated current flow demonstrations</span>
                   </li>
                 </ul>
                 <NavLink 
@@ -140,7 +140,7 @@ const Index = () => {
               
               <div className="md:w-1/2 order-1 md:order-2">
                 <div className="aspect-video rounded-xl overflow-hidden border border-border shadow-xl">
-                  <AIVisualizer type="neural-network" />
+                  <ElectricalVisualizer type="circuit" />
                 </div>
               </div>
             </motion.div>

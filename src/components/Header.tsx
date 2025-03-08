@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Brain, Menu, X } from 'lucide-react';
+import { Zap, Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -31,8 +31,8 @@ const Header = () => {
           to="/" 
           className="flex items-center gap-2 font-display font-bold text-xl transition-all"
         >
-          <Brain className="w-6 h-6 text-primary" />
-          <span className="text-gradient">AI Visualizer</span>
+          <Zap className="w-6 h-6 text-primary" />
+          <span className="text-gradient">ElectriVision</span>
         </NavLink>
         
         {/* Desktop Navigation */}
@@ -51,7 +51,7 @@ const Header = () => {
               `font-medium transition-all hover:text-primary ${isActive ? 'text-primary' : ''}`
             }
           >
-            AI Concepts
+            Electricity Concepts
           </NavLink>
           <NavLink 
             to="/about" 
@@ -100,7 +100,7 @@ const Header = () => {
             }
             onClick={() => setMobileMenuOpen(false)}
           >
-            AI Concepts
+            Electricity Concepts
           </NavLink>
           <NavLink 
             to="/about" 

@@ -1,6 +1,6 @@
 
 import { useEffect, useRef, useState } from 'react';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Zap } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
 const HeroParticle = ({ delay = 0 }: { delay?: number }) => {
@@ -62,8 +62,8 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0 transform translate-y-10'}`}>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary mb-6 animate-fade-in-down">
-            <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">Visualizing AI Concepts</span>
+            <Zap className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium">Visualizing Electricity Concepts</span>
           </div>
         </div>
         
@@ -72,7 +72,7 @@ const Hero = () => {
             isVisible ? 'opacity-100' : 'opacity-0 transform translate-y-10'
           }`}
         >
-          Learn AI Through <span className="text-gradient">Visual Understanding</span>
+          Learn Electricity Through <span className="text-gradient">Visual Understanding</span>
         </h1>
         
         <p 
@@ -80,7 +80,7 @@ const Hero = () => {
             isVisible ? 'opacity-100' : 'opacity-0 transform translate-y-10'
           }`}
         >
-          Explore complex AI concepts through beautiful interactive visualizations. Understand machine learning, neural networks, and algorithms with clarity and ease.
+          Explore electricity concepts through beautiful interactive visualizations. Understand circuits, current, voltage, and electrical components with clarity and ease.
         </p>
         
         <div 
